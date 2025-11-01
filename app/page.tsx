@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,12 +14,18 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+          <div>
+            <a className="text-blue-500 text-lg" href="/blog">Blog</a> <br /> <a className="text-blue-500 text-lg" href="/dashboard">Dashboard</a>
+            <br />
+            <Link className="text-blue-500 text-lg" href="/">Home</Link>
+          </div>
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
-            <a
+
+            {/* <a
               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
             >
@@ -31,7 +38,7 @@ export default function Home() {
             >
               Learning
             </a>{" "}
-            center.
+            center. */}
           </p>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
