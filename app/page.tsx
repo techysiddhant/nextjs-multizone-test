@@ -15,7 +15,7 @@ export default function Home() {
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <div>
-            <a className="text-blue-500 text-lg" href="/blog">Blog</a> <br /> <a className="text-blue-500 text-lg" href="/dashboard">Dashboard</a>
+            <a className="text-blue-500 text-lg" href={`${process.env.NEXT_PUBLIC_BLOG_URL}`}>Blog</a> <br /> <a className="text-blue-500 text-lg" href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}`}>Dashboard</a>
             <br />
             <Link className="text-blue-500 text-lg" href="/">Home</Link>
           </div>

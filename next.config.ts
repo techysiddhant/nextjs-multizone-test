@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/blog',
-        destination: `${BLOG_URL}/blog`,
+        destination: `${BLOG_URL}/`,
       },
       {
         source: '/blog/:path+',
@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/dashboard',
-        destination: `${DASHBOARD_URL}/dashboard`,
+        destination: `${DASHBOARD_URL}/`,
       },
       {
         source: '/dashboard/:path+',
